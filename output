@@ -1,0 +1,12 @@
+Enter the Expression : x*y+c/m^2
+
+ Token: x        stack :         postfix : x
+ Token: *        stack : *       postfix : x
+ Token: y        stack : *       postfix : x y
+ Token: +        stack : +       postfix : x y *
+ Token: c        stack : +       postfix : x y * c
+ Token: /        stack : + /     postfix : x y * c
+ Token: m        stack : + /     postfix : x y * c m
+ Token: ^        stack : + / ^   postfix : x y * c m
+ Token: 2        stack : + / ^   postfix : x y * c m 2
+ Postfix: xy*cm2^/+
